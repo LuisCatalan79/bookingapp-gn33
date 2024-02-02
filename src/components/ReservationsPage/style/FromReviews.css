@@ -1,7 +1,7 @@
 
 .reviews__form{
     background-color: #fff;
-    padding: 2.3em 2em 3em;
+    padding: 1.5em 1em 0.3em;
     border-radius: 0.9em;
     position: relative;
 }
@@ -12,6 +12,16 @@
     right: 1em;
     cursor: pointer;
     padding: 0.5em;
+    background-color: #fa404099;
+    color: #fff;
+    border-radius: 5px;
+    transition: transform 100ms ease,
+                box-shadow 100ms ease;
+}
+.reviews__X:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 0.5em #0005;
+    background-color: #fa4040;
 }
 .reviews__title{
     text-align: center;
@@ -35,7 +45,90 @@
     margin-bottom: 0.3em;
 }
 .reserveSelected__location{
-    font-size: 8rem;
+    font-size: 0.8rem;
     margin-bottom: 0.5em;
     font-weight: 300;
+}
+.reserveSelected__day__price{
+    font-size: 0.9rem;
+    display: grid;
+    gap: 0.5em;
+    font-weight: 500;
+}
+.reserveSelected__days{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.reserveSelected__days__label{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.reserveSelected__days__value{
+    font-weight: 300;
+}
+.reserveSelected__subtotal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.reserveSelected__subtotal__label{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.reserveSelected__subtotal__value{
+    font-weight: 300;
+}
+.reserveSelected__subtotal__value::before{
+    content: '$';
+    margin-right: 0.3em;
+}
+.reviews__label__rating{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.reviews__span__name{
+    font-size: 1rem;
+}
+.resiews__ratin{
+    padding: 0.3em 0.5em;
+    border: 1px solid #ccc;
+    font-size: 0.8em;
+}
+.reviews__label{
+    display: grid;
+    gap: 0.5em;
+}
+.reviews__span__name{
+    font-size: 1rem;
+}
+.reviews__comment__value{
+    resize: none;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    padding: 0.7em 1em;
+    border-radius: 0.6em;
+    font-weight: 300;
+    outline: none;
+    margin-bottom: 1.5em;
+}
+.reviews__btn{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 150px;
+    padding: 0.7em;
+    border: none;
+    background-color: #fa404099;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0.5em;
+    transition: transform 100ms ease,
+                box-shadow 100ms ease;
+}
+.reviews__btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 0.5em #0005;
+    background-color: #fa4040;
 }

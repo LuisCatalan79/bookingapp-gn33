@@ -8,7 +8,12 @@
     border-radius: 1em;
     box-shadow: 0.3em 0.3em 0.5em #0004;
     margin-bottom: 20px;
-    /* z-index: 15; */
+    transition: transform 100ms ease,
+                box-shadow 100ms ease;
+}
+.reservations__article:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 0.5em #0005;
 }
 .reservations__heade{
     border-radius: 1em;
@@ -88,4 +93,13 @@
     border-radius: 0.6em;
     background-color: #fa404099;
     color: #fff;
+    font-weight: 500;
+    border-radius: 0.5em;
+    transition: transform 100ms ease,
+                box-shadow 100ms ease;
+}
+.reservations__btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 0.5em #0005;
+    background-color: #fa4040;
 }

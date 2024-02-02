@@ -43,11 +43,11 @@ console.log(reservations);
                 </header>
                 <section className="reserveSelected__info">
                     <h3 className="reserveSelected__name">{reserveSelected?.hotel.name}</h3>
-                    <div className="reserveSelected__location"></div>
+                    <div className="reserveSelected__location">{reserveSelected?.hotel.city.name},{reserveSelected?.hotel.city.country}</div>
                 </section>
                 <section className="reserveSelected__day__price">
                     <div className="reserveSelected__days">
-                        <span className="reserveSelected__days__label">Reservations day:</span>
+                        <span className="reserveSelected__days__label">Reservations Days: </span>
                         <span className="reserveSelected__days__value">{ReserDays}</span>
                     </div>
                     <div className="reserveSelected__subtotal">

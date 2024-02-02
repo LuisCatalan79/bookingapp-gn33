@@ -19,7 +19,7 @@ const HotelInfoPage = () => {
     useEffect(() =>{
         getHotel()
     },[url])
-    console.log(hotel?.rating);
+    console.log(hotel);
   return (
     <div>
         <section className="hotel">
