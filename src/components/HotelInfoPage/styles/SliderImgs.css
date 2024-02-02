@@ -1,5 +1,9 @@
 .slider{
-    display: flex;
+    --width-btn:7%;
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: var(--width-btn) calc(100% - 2 * var(--width-btn)) var(--width-btn);
     align-items: center;
 }
 .slider__exterior{

@@ -1,0 +1,10 @@
+.otherhotel{
+    grid-column: span 2;
+}
+.otherhotel__name{
+    margin-bottom: 1.5em;
+}
+.otherhotel__name__country{
+    color: #fa4040;
+    margin-bottom: 1em;
+}

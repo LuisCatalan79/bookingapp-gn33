@@ -50,20 +50,17 @@ const HotelInfoPage = () => {
                     )
                 }
             </div>
-            <div>
-                <div>
-                    <span>{hotel?.city.name}</span>
-                    <span>{hotel?.city.country}</span>
-                </div>
-                <div>
+            <section className="hotel__info">
+                <h3 className="hotel__country">{hotel?.city.name}, {hotel?.city.country}</h3>
+                <div className="hotel__direction">
                     <i className='bx bx-map'></i>
-                    <span>{hotel?.address}</span>
+                    <span className="hotel__direction__value">{hotel?.address}</span>
                 </div>
-                <p>{hotel?.description}</p>
-            </div>
-            <CommentsSection
+                <p className="hotel__description">{hotel?.description}</p>
+            <CommentsSection className='hotel__coments'
                hotelId={hotel?.id}
             />
+            </section>
             {
                 localStorage.getItem('token') && (
                     <ReservationsHotel

@@ -1,0 +1,48 @@
+.hotel__reservations{
+    margin-bottom: 2em;
+    grid-column: span 2;
+    background-color: #ccc;
+    border: 1px solid #0003;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 5px;
+   
+}
+.hotel__reservations__title{
+    color: #fa4040;
+    margin-bottom: 0.5em;
+}
+.form-reservations__fields{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 200px 200px;
+}
+.form-reservations__label{
+    display: grid;
+    gap: 0.5em;
+}
+.form-reservations__span{
+    padding-right: 1.5em;
+}
+.form-reservations__input{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 1.5em;
+}
+.form-reservations__btn{
+    margin-bottom: 1em;
+    width: 100px;
+    padding: 0.5em 0;
+    font-size: 1rem;
+    background-color: #fa4040cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: transform 100ms ease,
+                box-shadow 100ms ease;
+}
+.form-reservations__btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 0.5em #0005;
+    background-color: #fa4040;
+}

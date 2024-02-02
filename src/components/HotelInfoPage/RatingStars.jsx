@@ -5,18 +5,18 @@ const RatingStars = ({hotel}) => {
   for (let i = 0; i< hotel; i++){
     rank.push(i)
   }
-  console.log('*******************************************************');
+  // console.log('*******************************************************');
   console.log(hotel);
   return (
     <div>
         {
           rank.map(star=>(
-            <AiFillStar/>
-          ))
-
-            // [... new Array(Number(hotel?.rating))].map((star, index)=>{
-            //      index<hotel?.rating ? <AiFillStar/> : <AiOutlineStar/>
-            // })
+            // <AiFillStar/>
+            
+            [... new Array(Number(hotel?.rating))].map((star, index)=>{
+              index<hotel?.rating ? <AiFillStar/> : <AiOutlineStar/>
+            })
+            ))
         }
     </div>
   )
