@@ -1,0 +1,41 @@
+
+.reviews__form{
+    background-color: #fff;
+    padding: 2.3em 2em 3em;
+    border-radius: 0.9em;
+    position: relative;
+}
+.reviews__X{
+    position: absolute;
+    font-size: 1.1rem;
+    top: 0.6em;
+    right: 1em;
+    cursor: pointer;
+    padding: 0.5em;
+}
+.reviews__title{
+    text-align: center;
+    margin-bottom: 1em;
+    color: #fa4040;
+}
+.reserveSelected{
+    margin-bottom: 1.5em;
+}
+.reserveSelected__header{
+    display: flex;
+    justify-content: center;
+}
+.reserveSelected__img{
+    width: 200px;
+    border-radius: 0.8em;
+    margin-bottom: 1em;
+}
+.reserveSelected__name{
+    font-size: 1rem;
+    margin-bottom: 0.3em;
+}
+.reserveSelected__location{
+    font-size: 8rem;
+    margin-bottom: 0.5em;
+    font-weight: 300;
+}

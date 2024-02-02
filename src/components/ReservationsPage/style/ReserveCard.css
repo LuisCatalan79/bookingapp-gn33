@@ -1,0 +1,91 @@
+.reservations__article{
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr 1fr;
+    width: 100%;
+    max-width: 900px;
+    gap: 1em;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 0.3em 0.3em 0.5em #0004;
+    margin-bottom: 20px;
+    /* z-index: 15; */
+}
+.reservations__heade{
+    border-radius: 1em;
+    overflow: hidden;
+}
+.reservations__img{
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+}
+.reservations__info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.reservations__name__hotel{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.reservations__name__cityAndCountry{
+    font-size: 0.8rem;
+}
+.reservations__comment{
+    color: #3232ce;
+    font-size: 0.8rem;
+    cursor: pointer;
+   
+}
+.reservations__comment:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.reserve__day__price{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.reservations__days{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+.reservations__days__label{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.reservations__days__value{
+    font-weight: 300;
+    position: relative;
+}
+.reservations__subtota{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+.reservations__subtotal__label{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.reservations__subtotal__value{
+    font-weight: 300;
+    position: relative;
+    left: 3em;
+}
+.reservations__subtotal__value::before{
+    content: 'UDS$';
+    font-size: 0.7em;
+    position: absolute;
+    left: -3em;
+    bottom: 0.3em;
+    align-self: end;
+}
+.reservations__btn{
+    font-size: 1.2rem;
+    border: none;
+    width: 2.5em;
+    aspect-ratio: 1;
+    border-radius: 0.6em;
+    background-color: #fa404099;
+    color: #fff;
+}

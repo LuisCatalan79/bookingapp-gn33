@@ -1,0 +1,91 @@
+.loginPage{
+    margin-top: 15em;
+    min-height: calc(100vh -103px);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+.loginPage__img{
+    display: block;
+    width: 100%;
+    max-width: 100px;
+}
+.login{
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 3em;
+}
+.loginPage__title{
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: #fa4040;
+    text-transform: uppercase;
+}
+.loginPage__field{
+    display: grid;
+    gap: 0.5em;
+}
+.loginPage__label{
+    padding-left: 1em;
+    font-weight: 500;
+}
+.loginPage__input{
+    padding: 0.5em 1em;
+    border: 1px solid #0003;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 100%;
+}
+.loginPage__btn{
+    display: block;
+    margin-top: 3em;
+    width: 100%;
+    padding: 0.7em 0;
+    font-size: 1rem;
+    background-color: #fa4040;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: transform 100ms ease,
+                box-shadow 100ms ease;
+}
+.loginPage__btn:hover{
+    filter: brightness(1.1);
+    transform: scale(1.05);
+    box-shadow: 0 0 0.5em #0005            
+}
+.logout{
+    margin-top: 15em;
+    min-height: calc(100vh -103px);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+.logout__title{
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: #fa4040;
+    text-transform: capitalize;
+}
+.logout__btn{
+    display: block;
+    margin-top: 3em;
+    width: 20%;
+    padding: 0.7em 0;
+    font-size: 1rem;
+    background-color: #fa4040;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: transform 100ms ease,
+                box-shadow 100ms ease;
+}
+.logout__btn:hover{
+    filter: brightness(1.1);
+    transform: scale(1.05);
+    box-shadow: 0 0 0.5em #0005 
+}

@@ -1,0 +1,23 @@
+.form-filterName{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.filterName__input{
+    border-radius: 5px;
+}
+.filterName__btn{
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #dd1a1a;
+    color: white;
+    box-shadow: -2px 2px 6px #0002;
+    margin-right: 2px;
+    transition: transform 100ms ease,
+                box-shadow 100ms ease;
+}
+.filterName__btn:hover{
+    filter: brightness(1.1);
+    transform: scale(1.05);
+    box-shadow: 0 0 0.5em #0005
+}
