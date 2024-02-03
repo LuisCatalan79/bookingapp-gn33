@@ -1,3 +1,4 @@
-label{
-    display: block;
+.app{
+    width: 100%;
+    background-color: blue;
 }

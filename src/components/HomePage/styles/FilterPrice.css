@@ -1,7 +1,7 @@
 .container-price{
     display: block;
     justify-content: center;
-    width: 300px;
+    /* width: 300px; */
     height: 220px;
     border-radius: 3px;
 }
@@ -55,4 +55,13 @@
     background-color: #cd5b5b;
     width: 40%;
 }
-      
+
+@media all and (max-width: 480px) {
+    .price__form{
+        padding: 0;
+    }
+    .price__input{
+        font-size: 1rem;
+        
+    }
+}     

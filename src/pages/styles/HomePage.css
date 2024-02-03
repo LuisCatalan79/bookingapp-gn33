@@ -8,6 +8,8 @@
 }
 .homePage__general{
     display: flex;
+    width: 100%;
+    background-color: brown;
 }
 @media all and (max-width: 480px) { 
     .homePage-container{ background-color: red;}

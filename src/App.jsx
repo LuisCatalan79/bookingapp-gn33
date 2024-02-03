@@ -13,7 +13,7 @@ function App() {
   
 
   return (
-    <div>
+    <div className='app'>
       <HeaderShared/>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
