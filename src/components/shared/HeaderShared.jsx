@@ -4,7 +4,7 @@ import './style/HeaderShared.css'
 const HeaderShared = () => {
   return (
     <header className="header">
-        <h1 className="header__logo"><a href="/">Booking <span className="header__app">App</span> </a></h1>
+        <h1 className="header__logo"><a href="#/">Booking<span className="header__app">App</span> </a></h1>
 
         <nav className="header__nav">
             <ul className="header__list">
