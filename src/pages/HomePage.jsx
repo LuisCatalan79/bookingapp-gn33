@@ -12,8 +12,8 @@ const HomePage = () => {
   const [nameImput, setNameImput] = useState('')
 
   const [fromTo, setFromTo] = useState({
-    from:0,
-    to:Infinity
+    from: 0,
+    to: Infinity
   })
 
   const hotels = useSelector(states => states.hotels)
@@ -21,18 +21,18 @@ const HomePage = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    const url ='https://hotels-api.academlo.tech/hotels'
+    const url = 'https://hotels-api.academlo.tech/hotels'
     dispatch(getHotelsThunk(url))
   }, [])
 
   // console.log(hotels);
-  
-  const hotelsFiltered = hotels?.results.filter(hotelInfo=>{
+
+  const hotelsFiltered = hotels?.results.filter(hotelInfo => {
     //Filter Name
-        const filterName = hotelInfo.name.toLowerCase().includes(nameImput)
+    const filterName = hotelInfo.name.toLowerCase().includes(nameImput)
     //Filter Price
-        const priceHotel = +hotelInfo.price
-        const filterPrice = fromTo.from <= priceHotel && priceHotel <= fromTo.to
+    const priceHotel = +hotelInfo.price
+    const filterPrice = fromTo.from <= priceHotel && priceHotel <= fromTo.to
     //Filter Cities
 
     return filterName && filterPrice
@@ -40,19 +40,21 @@ const HomePage = () => {
 
   return (
     <div className="homePage-container">
-      <FilterName
-      setNameImput={setNameImput}
-      />
-      <div className="homePage__general">
-      <div className="homePage__filter">
-      <FilterPrice
-      setFromTo={setFromTo}
-      />
-      <FilterCities/>
+      
+      
+        <section className="homePage__filter">
+          <h2 className="filters__title">Filters</h2>
+          <FilterPrice
+            setFromTo={setFromTo}
+          />
+          <FilterCities />
 
-      </div>
-      <ListHotels hotels={hotelsFiltered}/>
-    </div>
+        </section>
+      <FilterName
+        setNameImput={setNameImput}
+      />
+        <ListHotels hotels={hotelsFiltered} />
+      
     </div>
   )
 }

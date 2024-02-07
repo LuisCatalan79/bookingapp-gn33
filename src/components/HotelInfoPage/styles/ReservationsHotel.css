@@ -46,3 +46,9 @@
     box-shadow: 0 0 0.5em #0005;
     background-color: #fa4040;
 }
+@media all and (max-width: 480px){
+    .form-reservations__fields{
+        grid-template-columns: 1fr;
+    }
+    
+}

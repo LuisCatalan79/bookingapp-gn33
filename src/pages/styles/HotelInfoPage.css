@@ -1,3 +1,4 @@
+
 .hotel{
     margin-top: 5em;
     width: 100%;
@@ -38,4 +39,20 @@
     font-weight: 300;
     padding: 1em 0 1.5em;
     line-height: 1.4;
+}
+@media all and (max-width: 480px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .hotel{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        column-gap: 0;
+    }
+    .hotel__map{
+        width: 100%;
+        max-width: 500px;
+        grid-row: 3/4;
+        margin: 2em 0;
+    }
 }

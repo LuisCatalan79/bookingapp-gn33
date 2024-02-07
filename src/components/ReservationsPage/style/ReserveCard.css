@@ -15,7 +15,7 @@
     transform: scale(1.05);
     box-shadow: 0 0 0.5em #0005;
 }
-.reservations__heade{
+.reservations__header{
     border-radius: 1em;
     overflow: hidden;
 }
@@ -102,4 +102,11 @@
     transform: scale(1.05);
     box-shadow: 0 0 0.5em #0005;
     background-color: #fa4040;
+}
+@media all and (max-width: 480px){
+    .material-symbols-outlined{
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+    }
 }

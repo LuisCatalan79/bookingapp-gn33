@@ -58,7 +58,7 @@ const RegisterPage = () => {
             </select>
         </div>
           
-        <button className="form-register__btn">Submit</button>
+        <button className="form-register__btn"><a href="/login">Submit</a></button>
       </form>
     </div>
   )

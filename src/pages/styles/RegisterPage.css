@@ -1,5 +1,5 @@
 .register{
-    margin-top: 100px;
+    margin-top: -1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,10 +21,10 @@
 .form-register{
     width: 100%;
     max-width: 400px;
-    padding: 1em 1.5em 4em;
+    padding: 0 1.5em 4em;
     border: 1px solid #0003;
     display: grid;
-    gap: 0.8em;
+    gap: 0.3em;
     border-radius: 0 0 1.2em 1.2em;
 }
 .form-register__field{
@@ -47,10 +47,11 @@
     padding: 0.5em 1em;
     border: 1px solid #0003;
     margin-top: 1em;
-    margin-bottom: 1.5em;
+    margin-bottom: 0;
+    font-size: 1rem;
 }
 .form-register__option{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
 }
 .form-register__btn{
@@ -60,4 +61,10 @@
     color: #fff;
     font-size: 1.06rem;
     filter: brightness(1.1);
+}
+@media all and (max-width: 480px) { 
+    /* .register{
+        margin-top: 10px;
+        height: 80%;
+    } */
 }

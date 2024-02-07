@@ -1,12 +1,17 @@
 import { useForm } from "react-hook-form"
 import useAuth from "../hooks/useAuth"
 import './styles/LoginPaje.css'
+import { useNavigate } from "react-router-dom"
 
 const LoginPage = () => {
 
+  window.location.replace
+
   const {handleSubmit,reset,register} = useForm()
 
-  const { loginUser } = useAuth()
+  const navigate = useNavigate()
+
+  const { loginUser, logout } = useAuth()
 
   const submit = data =>{
 
@@ -21,6 +26,9 @@ const LoginPage = () => {
   const handleLogout = () => {
     localStorage.removeItem('token')
     localStorage.removeItem('user')
+    logout();  
+    navigate('/login')    
+
   }
 
   if(localStorage.getItem('token')){
@@ -31,10 +39,11 @@ const LoginPage = () => {
         <button onClick={handleLogout} className="logout__btn"><a href="/">Logout</a></button>
       </div>
     )
-  }
+  }else{
 
-  return (
-    <div className="loginPage">
+    
+    return (
+      <div className="loginPage">
       <header className="loginPage__header">
         <img className="loginPage__img" src="https://cdn.icon-icons.com/icons2/1508/PNG/512/systemusers_104569.png" alt="" />
 
@@ -59,6 +68,7 @@ const LoginPage = () => {
       </form>
     </div>
   )
+}
 }
 
 export default LoginPage

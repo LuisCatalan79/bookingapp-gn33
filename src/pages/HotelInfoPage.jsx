@@ -21,7 +21,7 @@ const HotelInfoPage = () => {
     },[url])
     console.log(hotel);
   return (
-    <div>
+    <div className="container">
         <section className="hotel">
             <header className="hotel__name">
                 <h2 className="hotel__name__value">{hotel?.name}</h2>

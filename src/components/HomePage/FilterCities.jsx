@@ -26,8 +26,8 @@ const FilterCities = () => {
   
 
   return (
-    <div className="container-price">
-      <h3 className="price__title3">Cities</h3>
+    <section className="filter__country">
+      <h3 className="price__title">Cities</h3>
       <ul className="price__ul">
         <li onClick={() => handleFilterCities('all cities')} className="price__li">All cities</li>
         {
@@ -36,7 +36,7 @@ const FilterCities = () => {
           ))
         }
       </ul>
-    </div>
+    </section>
   )
 }
 

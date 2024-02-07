@@ -14,21 +14,21 @@ const FilterPrice = ({setFromTo}) => {
   }
 
   return (
-    <div className="container-price">
-      <h2 className="price__title1">Filters</h2>
-      <h3 className="price__title2">Price</h3>
-      <form onSubmit={handleSubmit} className="price__form">
-        <label className="price__label">
-          <span className="price__span">From:</span>
+    
+    <form onSubmit={handleSubmit} className="price__form">
+        <h3 className="price__title">Price</h3>
+        <div className="price__field">
+          <label className="price__label" >From:</label>
           <input {...register('from')} type="number" placeholder="Example 100" className="price__input"/>
-        </label>
-        <label className="price__label">
-          <span className="price__span">To:</span>
+        </div>
+        <div className="price__field">
+        <label className="price__label" >To:</label>
           <input {...register('to')} type="number" placeholder="Example 200" className="price__input"/>
-        </label>
+        </div>
         <button className="price__btn">Apply</button>
       </form>
-    </div>
+
+    
   )
 }
 

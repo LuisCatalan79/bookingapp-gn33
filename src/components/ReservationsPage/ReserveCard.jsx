@@ -15,7 +15,6 @@ const handleDelete = () => {
 const handleReviews = ()  => {
   setReserveSelected(reserve)
   setOpenModal(false)
-  console.log('hola');
 }
 
 

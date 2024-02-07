@@ -1,21 +1,25 @@
-.container-price{
-    display: block;
-    justify-content: center;
-    /* width: 300px; */
-    height: 220px;
-    border-radius: 3px;
+.price__form{
+    display: grid;
+    gap: 0.5em;
+    margin-bottom: 1.5em;
 }
-.price__title2{
-    font-size: 1.2rem;
+.price__title{
+    font-size: 1rem;
     text-align: center;
     font-weight: 500;
 }
-.price__form{
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    justify-content: center;
-    padding: 8px;
+.price__labe{
+    display: block;
+    padding-left: 1em;
+    margin-bottom: 0.2em;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+.price__input{
+    display: block;
+    border: 1px solid #aaa9;
+    width: 100%;
+    padding: 0.4em 0.8em;
 }
 .price__btn{
     display: flex;
@@ -35,11 +39,9 @@
     transform: scale(1.05);
     box-shadow: 0 0 0.5em #0005
 }
-.price__title3{
-    margin-top: 60px;
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: 500;
+.filter__country{
+    display: grid;
+    gap: 0.5em;
 }
 .price__ul{
     display: grid;
@@ -61,7 +63,8 @@
         padding: 0;
     }
     .price__input{
-        font-size: 1rem;
-        
+        font-size: 1.3rem;
+        text-align: center;
     }
+
 }     
