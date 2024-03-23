@@ -17,9 +17,9 @@
 .header__app{
     color: #444;
 }
-.header__nav{
+/* .header__nav{
     display: block;
-}
+} */
 .header__list{
     display: flex;
     gap: 1.5em;
@@ -27,9 +27,18 @@
 @media all and (max-width: 480px) {
     .header{
         padding: 0;
+        height: 10vh;
     }
     .header__nav{
-        display: block;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        width: 100%;
+        top: 10vh;
+    }
+    .header__list{
+        display: flex;
+        flex-direction: column;
     }
     .material-symbols-outlined{
         color: #fa4040;
@@ -47,11 +56,13 @@
         margin: 0;
     }
     .open{
-        transform: translateX(0);
+        transform: translateX(1000px);
         transition: transform 1.2s ease;
     }
     .header__menu{
+        position: absolute;
         align-content:flex-end;
+        right: 0;
     }
 
 }

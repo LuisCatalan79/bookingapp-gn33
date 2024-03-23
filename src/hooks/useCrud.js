@@ -7,7 +7,7 @@ const useCrud = () => {
 
     const [response, setResponse] = useState()
 
-    const baseUrl =`https://hotels-api.academlo.tech`
+    const baseUrl =`http://localhost:8080`
 
     //GET
     const getApi = (path) => {

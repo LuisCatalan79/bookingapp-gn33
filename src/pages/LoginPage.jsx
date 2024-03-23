@@ -21,7 +21,7 @@ const LoginPage = () => {
       email:'',
       password:''
     })
-
+    navigate('/')
   }
   const handleLogout = () => {
     localStorage.removeItem('token')

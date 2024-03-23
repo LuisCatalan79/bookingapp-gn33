@@ -21,13 +21,13 @@ const HomePage = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    const url = 'https://hotels-api.academlo.tech/hotels'
+    const url = 'http://localhost:8080/hotels'
     dispatch(getHotelsThunk(url))
   }, [])
 
   // console.log(hotels);
 
-  const hotelsFiltered = hotels?.results.filter(hotelInfo => {
+  const hotelsFiltered = hotels?.filter(hotelInfo => {
     //Filter Name
     const filterName = hotelInfo.name.toLowerCase().includes(nameImput)
     //Filter Price

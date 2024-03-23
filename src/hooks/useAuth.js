@@ -4,7 +4,7 @@ import axios from "axios"
 const useAuth = data => {
   //Register
   const createNewUser = (data) => {
-    const url ='https://hotels-api.academlo.tech/users'
+    const url ='http://localhost:8080/users'
     axios.post(url, data)
         .then(res=> console.log(res.data))
         .catch(err=> console.log(err))
@@ -12,7 +12,7 @@ const useAuth = data => {
 
   //Login
   const loginUser = (data) => {
-    const url='https://hotels-api.academlo.tech/users/login'
+    const url='http://localhost:8080/users/login'
     axios.post(url, data)
         .then(res => {
             console.log(res.data)

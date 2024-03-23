@@ -6,7 +6,7 @@ import './styles/FilterPrice.css'
 
 const FilterCities = () => {
 
-  const url='https://hotels-api.academlo.tech/cities'
+  const url='http://localhost:8080/cities'
   const [ cities, getCities ] = useFetch(url)
 
   useEffect(() => {
@@ -17,9 +17,9 @@ const FilterCities = () => {
 
   const handleFilterCities = (id) =>{
   
-  let url='https://hotels-api.academlo.tech/hotels'
+  let url='http://localhost:8080/hotels'
     if (id !== 'all cities') {
-      url=`https://hotels-api.academlo.tech/hotels?cityId=${id}`
+      url=`http://localhost:8080/hotels?cityId=${id}`
     }
     dispatch(getHotelsThunk(url))
   }

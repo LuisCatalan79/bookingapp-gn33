@@ -6,7 +6,7 @@ import { useEffect } from "react"
 
 const HeaderShared = ({}) => {
 
-  const [menu, setMenu] = useState(false)
+  const [menu, setMenu] = useState(true)
 
   const { loginUser } = useAuth()
  
@@ -27,14 +27,14 @@ const HeaderShared = ({}) => {
           <div className="header__menu">
             <span className="material-symbols-outlined" onClick={handlemenu}>menu</span>
           </div>
-          <nav className={"header__nav"}>
-            <ul className={`header__list ${menu? 'open' : ''}`}>
+          <nav className={`header__nav ${menu? 'open' : ''}`}>
+            <ul className={`header__list `}>
               <li className="header__list__item"><Link to='/'>Home</Link></li>
               {
                 loginUser&&<li className="header__list__item"><Link className={`${!loginUser ? 'dissapear' : ''}`} to='/reservations'>Reservations</Link></li>
               }
               {
-               !loginUser&&<li className="header__list__item"><Link to='/register'>Register</Link></li>
+               loginUser&&<li className="header__list__item"><Link to='/register'>Register</Link></li>
               }
               {
                loginUser? <li className="header__list__item"><Link to='/login'>Profile</Link></li>: <li li className="header__list__item"><Link to="/login">Login</Link></li>

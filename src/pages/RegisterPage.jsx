@@ -1,10 +1,12 @@
 import { useForm } from "react-hook-form"
 import useAuth from "../hooks/useAuth"
 import './styles/RegisterPage.css'
+import { useNavigate } from "react-router-dom"
 
 const RegisterPage = () => {
 
   const {handleSubmit, reset, register} = useForm()
+  const navigate = useNavigate()
 
   const { createNewUser } = useAuth()
 
@@ -17,6 +19,7 @@ const RegisterPage = () => {
       password:'',
       gender:'other'
     })
+    navigate('/login')
   }
 
   return (
@@ -58,7 +61,7 @@ const RegisterPage = () => {
             </select>
         </div>
           
-        <button className="form-register__btn"><a href="/login">Submit</a></button>
+        <button className="form-register__btn">Submit</button>
       </form>
     </div>
   )

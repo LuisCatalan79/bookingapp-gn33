@@ -13,7 +13,7 @@ const HotelInfoPage = () => {
 
     const {id} = useParams()
 
-    const url=`https://hotels-api.academlo.tech/hotels/${id}`
+    const url=`http://localhost:8080/hotels/${id}`
     const [hotel, getHotel] = useFetch(url)
 
     useEffect(() =>{

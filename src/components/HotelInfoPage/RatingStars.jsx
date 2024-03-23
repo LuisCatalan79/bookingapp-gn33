@@ -6,15 +6,16 @@ const RatingStars = ({hotel}) => {
     rank.push(i)
   }
   // console.log('*******************************************************');
-  console.log(hotel);
+  const rating = Math.round(Number(hotel || 1));
+  console.log(rating);
   return (
     <div>
         {
           rank.map(star=>(
             // <AiFillStar/>
             
-            [... new Array(Number(hotel?.rating))].map((star, index)=>{
-              index<hotel?.rating ? <AiFillStar/> : <AiOutlineStar/>
+            [... new Array(rating)].map((star, index)=>{
+              index<rating? <AiFillStar/> : <AiOutlineStar/>
             })
             ))
         }

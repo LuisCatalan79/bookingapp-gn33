@@ -16,7 +16,7 @@ const CommentsSection = ({hotelId}) => {
   return (
     <div>
         {
-            reviews?.map(reviewInfo => (
+            reviews?.results.map(reviewInfo => (
                 <div key = {reviewInfo.id}>
                     <div>{reviewInfo.rating}⭐</div>
                     <div><span>Comment date: </span>{reviewInfo.createdAt}</div>

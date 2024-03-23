@@ -52,7 +52,7 @@ console.log(reservations);
                     </div>
                     <div className="reserveSelected__subtotal">
                         <span className="reserveSelected__subtotal__label">Subtotal Price:</span>
-                        <span className="reserveSelected__subtotal__value">{Number(reserveSelected?.hotel.price)*ReserDays}</span>
+                        <span className="reserveSelected__subtotal__value">{Number(reserveSelected?.hotel.price || 1)*ReserDays || 1}</span>
                     </div>
                 </section>
             </article>
