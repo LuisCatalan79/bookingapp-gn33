@@ -4,7 +4,7 @@ import axios from "axios"
 const useAuth = data => {
   //Register
   const createNewUser = (data) => {
-    const url ='http://localhost:8080/users'
+    const url ='https://bookingapp-backend-g33.onrender.com/users'
     axios.post(url, data)
         .then(res=> console.log(res.data))
         .catch(err=> console.log(err))
@@ -12,7 +12,7 @@ const useAuth = data => {
 
   //Login
   const loginUser = (data) => {
-    const url='http://localhost:8080/users/login'
+    const url='https://bookingapp-backend-g33.onrender.com/users/login'
     axios.post(url, data)
         .then(res => {
             console.log(res.data)

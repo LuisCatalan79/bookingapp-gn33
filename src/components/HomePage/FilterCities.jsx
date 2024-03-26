@@ -6,7 +6,7 @@ import './styles/FilterPrice.css'
 
 const FilterCities = () => {
 
-  const url='http://localhost:8080/cities'
+  const url='https://bookingapp-backend-g33.onrender.com/cities'
   const [ cities, getCities ] = useFetch(url)
 
   useEffect(() => {
@@ -17,9 +17,9 @@ const FilterCities = () => {
 
   const handleFilterCities = (id) =>{
   
-  let url='http://localhost:8080/hotels'
+  let url='https://bookingapp-backend-g33.onrender.com/hotels'
     if (id !== 'all cities') {
-      url=`http://localhost:8080/hotels?cityId=${id}`
+      url=`https://bookingapp-backend-g33.onrender.com/hotels?cityId=${id}`
     }
     dispatch(getHotelsThunk(url))
   }
