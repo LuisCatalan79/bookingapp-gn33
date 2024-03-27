@@ -17,7 +17,7 @@ const RegisterPage = () => {
       lastName:'',
       email:'',
       password:'',
-      gender:'other'
+      gender:'OTHERS'
     })
     navigate('/login')
   }
@@ -55,9 +55,9 @@ const RegisterPage = () => {
             <span>Gender: </span>
           </label>
             <select {...register('gender')} className="form-register__select" >
-              <option value="male" className="form-register__option" >Male</option>
-              <option value="female" className="form-register__option" >Female</option>
-              <option value="other" className="form-register__option" >Other</option>
+              <option value="MALE" className="form-register__option" >Male</option>
+              <option value="FEMALE" className="form-register__option" >Female</option>
+              <option value="OTHERS" className="form-register__option" >Other</option>
             </select>
         </div>
           
